@@ -1,0 +1,318 @@
+<html><head><base href="https://websim.localdeals.com/fr/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recevez les Meilleurs Bons Plans et Offres Locales en Avant-Première !</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #e74c3c;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-image: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .cta-button:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        
+        section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .value-prop ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .value-prop li {
+            margin-bottom: 1rem;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .value-prop li::before {
+            content: "✓";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 1rem;
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-color);
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            opacity: 0.2;
+        }
+        
+        .limited-offer {
+            background-color: #f39c12;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .limited-offer::before {
+            content: "OFFRE LIMITÉE";
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+        }
+        
+        #countdown {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        input {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .how-it-works ol {
+            counter-reset: steps;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .how-it-works li {
+            counter-increment: steps;
+            margin-bottom: 1.5rem;
+            padding-left: 50px;
+            position: relative;
+        }
+        
+        .how-it-works li::before {
+            content: counter(steps);
+            background-color: var(--primary-color);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        footer a {
+            color: #ecf0f1;
+        }
+        
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .image-gallery img {
+            max-width: 30%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Recevez les Meilleurs Bons Plans et Offres Locales en Avant-Première !</h1>
+            <h2>Inscrivez-vous gratuitement et soyez parmi les 100 premiers à profiter d'offres exclusives et personnalisées, directement par email ou SMS !</h2>
+            <a href="#signup" class="cta-button">Je veux mes Bons Plans !</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="value-prop">
+            <h2>Pourquoi choisir notre service ?</h2>
+            <p>Accédez aux offres locales et personnalisées avant tout le monde. Recevez des alertes sur les meilleures réductions, les événements exclusifs, et les nouveautés près de chez vous.</p>
+            <ul>
+                <li>Offres personnalisées selon vos préférences</li>
+                <li>Alertes instantanées par email et SMS</li>
+                <li>Exclusivité : recevez les bons plans avant tout le monde</li>
+                <li>Économies garanties sur vos achats locaux</li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h2>Ce que disent nos utilisateurs</h2>
+            <div class="testimonial">
+                <p>"Grâce à ce service, j'ai économisé 150€ sur mes achats locaux en un mois seulement !" - Julie, Paris</p>
+            </div>
+            <p><strong>Déjà 500+ abonnés satisfaits dans votre région.</strong></p>
+        </section>
+
+        <section class="limited-offer">
+            <h2>Offre Limitée !</h2>
+            <p>Seulement 100 places gratuites restantes !</p>
+            <div id="countdown">Temps restant : <span id="timer">05:00</span></div>
+        </section>
+
+        <section id="signup">
+            <h2>Inscrivez-vous maintenant</h2>
+            <form action="/submit" method="POST">
+                <input type="text" name="prenom" placeholder="Votre prénom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <input type="tel" name="telephone" placeholder="Votre téléphone (optionnel)">
+                <button type="submit" class="cta-button">Oui, je veux profiter des bons plans !</button>
+            </form>
+        </section>
+
+        <section class="how-it-works">
+            <h2>Comment ça marche ?</h2>
+            <ol>
+                <li>Inscrivez-vous gratuitement</li>
+                <li>Recevez des alertes personnalisées sur les meilleurs bons plans locaux</li>
+                <li>Profitez de réductions exclusives et d'événements en avant-première</li>
+            </ol>
+        </section>
+
+        <section class="image-gallery">
+            <img src="local-shop.jpg" alt="Boutique locale accueillante avec des offres spéciales en vitrine" width="300" height="200">
+            <img src="happy-shopper.jpg" alt="Cliente souriante tenant des sacs de shopping avec l'air satisfait" width="300" height="200">
+            <img src="event-promotion.jpg" alt="Affiche d'un événement local exclusif avec des réductions spéciales" width="300" height="200">
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>Ne manquez pas cette opportunité unique de faire des économies sur vos achats locaux !</h3>
+            <p>Rejoignez notre communauté et profitez des meilleurs bons plans près de chez vous.</p>
+            <a href="#signup" class="cta-button">Je m'inscris maintenant !</a>
+            <p>© 2023 Bons Plans Locaux. Tous droits réservés.</p>
+            <p><a href="/privacy">Politique de confidentialité</a> | <a href="/terms">Conditions d'utilisation</a> | <a href="/contact">Contact</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fiveMinutes = 60 * 5,
+                display = document.querySelector('#timer');
+            startTimer(fiveMinutes, display);
+        };
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
