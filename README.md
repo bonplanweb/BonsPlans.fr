@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 </head>
-...
 </html>
 <head>
     <meta charset="UTF-8">
